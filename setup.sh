@@ -151,6 +151,13 @@ dvs_supported_chains () {
             CHAIN_DENOM="uqck"
             return
             ;;
+        atomoned)
+            DVS_FOUNDATION_ADDRESS="atone1c03jkal0xplar2p7ndshxeqrh9kw4m6ux9ntyk"
+            RECOMMENDED_FEE="5000"
+            RECOMMENDED_MIN_COMMISSION_TO_WITHDRAW="10000000"
+            CHAIN_DENOM="uatone"
+            return
+            ;;
     esac
 
     echo -e "${RED}ERROR!${NC} This chain is not supported ($NODE_SERVICE)."
